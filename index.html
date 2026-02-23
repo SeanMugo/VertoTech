@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VertoTech</title>
+    <style>
+        
+        :root {
+            --primary: #0D47A1;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin 0;
+        
+      }
+
+      .navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        justify-content:space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        box-sizing: border-box;
+    
+      }
+      .logo {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #1f0ffa;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin: 0;                        
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 2rem;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+      }
+
+      .hero {
+         background: linear-gradient(135deg, blue, darkblue);
+            color: white;
+            padding: 4rem 5%;
+            text-align: center;
+      }
+
+      .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+      
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.7;
+        }
+
+         .hero-btn {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-4px);
+
+        }
+
+        .products {
+            display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        padding: 40px;
+    
+        }
+
+      .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 12px;
+        transition: transform o.3s ease;
+      }
+      .card:hover img {
+        transform: scale(1.05);
+      }
+
+      .card button {
+        background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border:solid;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">VertoTech</div>
+
+        <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-buttons">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="signup">Sign Up</a>
+      </div>
+
+      </nav>
+      
+      <div class="hero">
+        <h1>Welcome to VertoTech</h1>
+        <p>Be the first to own the latest tech</p>
+        <button class="hero-btn">Shop</button>
+      </div>
+
+      
+     <div class="filter-bar">
+        <div class="categories">
+            <button class="category-btn active">All</button>
+            <button class="category-btn">Laptops</button>
+            <button class="category-btn">Phones</button>
+            <button class="category-btn">Audio</button>
+            <button class="category-btn">Watches</button>
+        </div>
+      </div>
+
+      <div class="products">
+        <div class="card">
+            <img src="Images/laptop.jpg" alt="Laptop"> <br> <br> <br>
+            <h2>Laptop</h2> 
+            <p>$4000</p>
+            <p>⭐⭐⭐⭐⭐</p>
+             <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Images/Watch.jpg" alt="Watch">
+            <h2>Watch</h2>
+            <p>$300</p>
+             <p>⭐⭐⭐⭐</p>
+             <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Airpods.jpg" alt="Airpods">
+            <h2>Airpods</h2>
+            <p>$200</p>
+             <p>⭐⭐⭐⭐⭐</p>
+             <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Images/headphone.jpg" alt="Headphones">
+            <h2>Headphones</h2>
+            <p>$300</p>
+             <p>⭐⭐⭐</p>
+             <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Images/mouse.jpg" alt="Mouse">
+            <h2>Mouse</h2>
+            <p>$50</p>
+             <p>⭐⭐⭐⭐⭐</p>
+             <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Images/phone.jpg" alt="Phone">
+            <h2>Phone</h2>
+            <p>$999</p>
+             <p>⭐⭐⭐⭐⭐</p>
+             <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="Images/speaker.jpg" alt="speaker">
+            <h2>Speaker</h2>
+            <p>$150</p>
+             <p>⭐⭐⭐⭐</p>
+             <button>Add to cart</button>
+        </div>
+        </div>
+        </div>
+      </div>
+</body>
+<footer class="footer">
+        <p>© 2026 VertoTech. All rights reserved.</p>
+    </footer>
+    
+</html>
